@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+ <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+
+  <div class="success_message">
+    <div class="icon-message">
+      <img src="assets/images/icon-success-check.svg" alt="check-icon">
+      <strong class="icon-text">Message Sent!</strong>
+    </div>
+    <p class="success-remark">
+      Thanks for completing the form. We will be in touch soon!
+    </p>
+  </div>
+
+  <div class="container">
+
+    <div class="contact">
+      <h1>contact us</h1>
+    </div>
+    
+    <ul class="name">
+      <li class="first_name">
+        <p>First name.<span>*</span></p>
+        <input type="text" name="fname" class="fname">
+        <p class="error" >This field is required</p>
+      </li>
+      <li class="last_name">
+        <p>Last Name<span>*</span></p>
+        <input type="text" name="lname" class="lname">
+        <p class="error">This field is required</p>
+      </li>
+    </ul>
+
+    <div class="email">
+      <p>Email Address<span>*</span></p>
+      <input type="email" name="email" class="mail">
+      <p class="error">Please input a valid email</p>
+    </div>
+
+    <div class="query">
+      <p>Query Type <span>*</span></p>
+      <div class="radios">
+        <div class="query1">
+          <input type="radio" class="radio1" name="radio" tabindex="0"> General Enquiry
+        </div>
+        <div class="query2">
+          <input type="radio" class="radio2" name="radio" tabindex="0"> Support Request
+        </div>
+      </div>
+      <p class="error">Please select a query type</p>
+    </div>
+
+    <div class="message">
+      <p>Message <span>*</span></p>      
+      <textarea name="message" class="txt" id="" cols="60" rows="8"></textarea>
+      <p class="error">This field is required</p>
+    </div>
+
+    <div class="consent">
+      <div class="inner">
+        <input type="checkbox" class="checkbox" tabindex="0">I consent to being contacted by the team
+      </div>
+      <p class="error">To submit this form, please consent to being contacted</p>    
+    </div>
+
+    <div class="button">
+      <button type="submit">Submit</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
